@@ -18,6 +18,7 @@ a {
     font-family: Epilogue;
     color: rgb(231, 231, 231);
     text-decoration: none;
+    font-style: bold;
 
 }
 
@@ -41,8 +42,10 @@ h2 {
 
 h3 {
     font-family: "Grape Nuts", cursive;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: hsla(0, 0%, 100%, 0.733);
+    margin: 0;
+    text-justify: right;
 }
 
 header {
@@ -120,6 +123,8 @@ main {
     margin-bottom: 3rem;
 }
 
+
+
 .article {
     flex: 1.5;
     padding-right: 4rem;
@@ -169,7 +174,7 @@ main {
     object-fit: cover;
 }
 
-.container {
+.project-container {
     display: flex;
     flex-flow: column;
 
@@ -179,7 +184,7 @@ main {
     display: flex;
     width: 100%;
     height: 20rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 
 }
 
@@ -209,6 +214,142 @@ main {
     margin: 0;
 }
 
+.skills-container {
+    display: grid;
+    grid-template-areas:
+        "skill1 skill2 skill3 skill4 skill5"
+        "title cap cap cap cap";
+    grid-template-rows: 10rem 5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem 5px;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#icon1{
+    grid-area: skill1;
+}
+
+#icon2{
+    grid-area: skill2;
+}
+
+#icon3{
+    grid-area: skill3;
+}
+
+#icon4{
+    grid-area: skill4;
+}
+
+#icon5{
+    grid-area: skill5;
+}
+
+.title {
+    grid-area: title;
+    box-sizing: border-box;
+    background-color: rgb(94, 94, 94);
+
+
+    padding: 1rem;
+    text-align: end;
+    border-radius: 5px;
+    visibility: hidden;
+ }
+
+ .title * {
+    box-sizing: border-box;
+    position: relative;
+    visibility: hidden;
+    line-height: 0;
+    top: 1.5rem;
+    
+    
+ }
+
+.caption {
+    grid-area: cap;
+    box-sizing: border-box;
+    background-color: rgb(160, 160, 160);
+    padding: 1rem;
+    border-radius: 5px;
+    visibility: hidden;
+ }
+
+.caption * {
+    position: absolute;
+    visibility: hidden;
+    max-width: 50%;
+}
+
+.skill-icon img {
+    width: 10rem;
+    height: auto;
+    object-position: center;
+    object-fit:contain;
+}
+
+.skill-icon {
+    margin: auto;
+}
+
+
 footer {
+    display: flex;
     background-color: rgb(32, 37, 54);
+    box-sizing: border-box;
+    height: 10rem;
+}
+
+footer h1 {
+    display: inline-block;
+    background-color: hsl(226, 26%, 10%);
+    padding: 1rem 3rem;
+    margin: 0;
+    align-content: center;
+}
+
+footer ul {
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none;
+    width: 50%;
+}
+
+footer .contact-info a {
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me .article {
+        flex: 1;
+        padding: 0;
+    }
+    .project-container .project {
+        box-sizing: border-box;
+        flex-direction: column;
+        height: 100%;
+    }
+    .project-container .project img {
+        display: block;
+        max-height: 30%;
+        width: 100%;
+
+    }
+    .skill-icon img {
+        width: 5rem;
+    }
+    .title * {
+        font-size: 1.2rem;
+    }
+    .skills-container {
+
+        grid-template-rows: 10rem 10rem;
+    
+    }
 }

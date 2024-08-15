@@ -19,16 +19,16 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
     </header>
     <main>
-        <h1>About Me</h1>
+        <h1 id="aboutme">About Me</h1>
         <section class="about-me">
             
             <div class="article">
@@ -73,8 +73,8 @@
         </section>
         <hr>
         <section class="projects">
-            <h1>Projects</h1>
-            <div class="container">
+            <h1 id="projects">Projects</h1>
+            <div class="project-container">
                 <div class="project">
                     <img src="./Resources/Images/gun01.jpg" alt="Project Image">
                     <div class="info">
@@ -115,53 +115,68 @@
 
         </section>
         <section class="skills">
-            <h1>Skills</h1>
-            <div class="container">
-                <div class="skill">
-                    <img src="./Resources/Images/ " alt="Skill Image">
-                    <h2>HTML</h2>
-                    <p>
+            <h1 id="skills">Skills</h1>
+            <div class="skills-container">
+                <div id="icon1" class="skill-icon">
+                    <img src="./Resources/Images/html.png" alt="Skill Image">
+
+
+                </div>
+                <div id="icon2" class="skill-icon">
+                    <img src="./Resources/Images/css.svg" alt="Skill Image">
+
+
+                </div>
+                <div id="icon3" class="skill-icon">
+                    <img src="./Resources/Images/javascript.png" alt="Skill Image">
+
+
+                </div>
+                <div id="icon4" class="skill-icon">
+                    <img src="./Resources/Images/python.png" alt="Skill Image">
+
+
+                </div>
+                <div id="icon5" class="skill-icon">
+                    <img src="./Resources/Images/github.png" alt="Skill Image">
+
+
+                </div>
+                <div id="title" class="title">
+                    <h3 id="title1">HTML</h3>
+                    <h3 id="title2">CSS</h3>
+                    <h3 id="title3">Javascript</h3>
+                    <h3 id="title4">Python</h3>
+                    <h3 id="title5">GitHub</h3>
+                </div>
+                <div id="caption" class="caption">
+                    <p id="caption1">
                         Proficient in writing clean, semantic code for structuring web content
                     </p>
-                </div>
-                <div class="skill">
-                    <img src="./Resources/Images/ " alt="Skill Image">
-                    <h2>CSS</h2>
-                    <p>
+                    <p id="caption2">
                         Skilled in designing responsive, visually appealing layouts with an emphasis on cross-browser compatibility.
                     </p>
-                </div>
-                <div class="skill">
-                    <img src="./Resources/Images/ " alt="Skill Image">
-                    <h2>Javascript</h2>
-                    <p>
+                    <p id="caption3">
                         Strong understanding of dynamic, client-side scripting to enhance interactivity and functionality.
                     </p>
-                </div>
-                <div class="skill">
-                    <img src="./Resources/Images/ " alt="Skill Image">
-                    <h2>Python</h2>
-                    <p>
+                    <p id="caption4">
                         Experience in backend development and scripting, with a focus on efficiency and readability.
                     </p>
-                </div>
-                <div class="skill">
-                    <img src="./Resources/Images/ " alt="Skill Image">
-                    <h2>GitHub</h2>
-                    <p>
+                    <p id="caption5">
                         Skilled in version control and collaborative development, utilizing GitHub for project management and code sharing.
-                    </p>   
+                    </p>
                 </div>
+            </div>
         </section>
 
     </main>
     <footer>
-        <h1>Contact</h1>
-        <div class="constact-info">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Email</a>
-        </div>
+        <h1 id="contact">Contact</h1>
+        <ul class="contact-info">
+            <li><a href="https://www.linkedin.com/in/matthew-tarasoff-a095b9199" title="https://www.linkedin.com/in/matthew-tarasoff-a095b9199">LinkedIn</a></li>
+            <li><a href="https://github.com/tarasoffM" title="https://github.com/tarasoffM">GitHub</a></li>
+            <li><a href="mailto:tarasoff.matt@gmail.com" title="tarasoff.matt@gmail.com">Email</a></li>
+        </ul>
     </footer>
     <script src="./Resources/JS/script.js"></script>
 </body>
