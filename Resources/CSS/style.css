@@ -349,7 +349,10 @@ footer .contact-info a {
     }
     .skills-container {
 
-        grid-template-rows: 10rem 10rem;
+        grid-template-rows: 10rem 12rem;
     
+    }
+    h2 {
+        font-size: 2rem;
     }
 }
